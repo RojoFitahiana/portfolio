@@ -1,15 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* Toutes tes couleurs */
+  --color-forest-bg:      #0e1512;
+  --color-forest-surface: #162820;
+  --color-forest-border:  #1e3828;
+  --color-forest-deep:    #0a2018;
+
+  --color-terminal:       #16c76a;
+  --color-terminal-light: #4ddb94;
+  --color-terminal-dim:   #0a3d20;
+
+  --color-snow:           #e6fff4;
 }
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
+/* ==================== BASE ==================== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
   }
+
+  body {
+    @apply bg-forest-bg text-snow antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply text-snow font-semibold tracking-tight;
+  }
+
+  p, li, span {
+    @apply text-terminal-light leading-relaxed;
+  }
+
+  a {
+    @apply text-terminal-light hover:text-terminal transition-colors;
+  }
+
+  .section-divider::before {
+    content: attr(data-label);
+    @apply font-mono text-terminal text-xs tracking-widest;
+  }
+}
+
+/* ==================== COMPONENTS (avec @utility) ==================== */
+@utility skill-tag {
+  @apply font-mono text-xs px-3 py-1 rounded-full
+         bg-forest-surface border border-forest-border text-terminal-light;
+}
+
+@utility skill-tag-accent {
+  @apply skill-tag border-terminal text-terminal;
+}
+
+@utility tech-tag {
+  @apply font-mono text-xs px-2 py-0.5 rounded
+         bg-forest-bg border border-forest-border text-terminal;
+}
+
+@utility btn-primary {
+  @apply bg-terminal text-forest-bg font-mono font-medium
+         px-5 py-2.5 rounded-lg hover:bg-terminal-light
+         transition-colors duration-200;
+}
+
+@utility btn-outline {
+  @apply bg-transparent text-terminal-light font-mono
+         border border-forest-border px-5 py-2.5 rounded-lg
+         hover:border-terminal hover:text-terminal
+         transition-colors duration-200;
+}
+
+@utility card {
+  @apply bg-forest-surface border border-forest-border rounded-xl p-5
+         hover:border-terminal transition-colors duration-200;
 }
