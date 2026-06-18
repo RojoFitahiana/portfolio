@@ -8,7 +8,7 @@ const projects = [
     description:
       "Application web centralisée permettant d'automatiser et de simplifier les demandes de congés au sein d'une organisation.",
     tags: ["Node js", "Angular", "PostgreSQL"],
-    github: "https://github.com/RojoFitahiana/systeme-rh",
+    github: "https://github.com/RojoFitahiana/gestion_conge.git",
     demo: null,
     status: "",
     featured: true,
@@ -19,7 +19,7 @@ const projects = [
     description:
       "Développement d'une application web intuitive conçue pour planifier, centraliser et optimiser l'organisation de voyages des Taxi-brousse",
     tags: ["Spring Boot", "React js", "MySQL", "Stripe"],
-    github: "https://github.com/RojoFitahiana/plateforme-formation",
+    github: "https://github.com/RojoFitahiana/gestion-voyage.git",
     demo: "https://formation-demo.vercel.app",
     status: "en cours",
     featured: false,
@@ -30,7 +30,7 @@ const projects = [
     description:
       "Développement d'une solution numérique centralisée permettant de suivre, d'enregistrer et de piloter la présence des collaborateurs ou des étudiants.",
     tags: ["Spring Boot", "Angular", "Oracle DB", "CI/CD"],
-    github: "https://github.com/RojoFitahiana/app-universitaire",
+    github: "https://github.com/RojoFitahiana/Qtrackr.git",
     demo: null,
     status: "terminé",
     featured: false,
