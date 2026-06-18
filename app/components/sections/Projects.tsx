@@ -4,7 +4,7 @@ import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 const projects = [
   {
     title: "Gestion  congé",
-    image: "/images/project1.png",
+    image: "/images/project1.JPG",
     description:
       "Application web centralisée permettant d'automatiser et de simplifier les demandes de congés au sein d'une organisation.",
     tags: ["Node js", "Angular", "PostgreSQL"],
@@ -15,7 +15,7 @@ const projects = [
   },
   {
     title: "Gestion voyage",
-    image: "/images/project2.png",
+    image: "/images/project2.JPG",
     description:
       "Développement d'une application web intuitive conçue pour planifier, centraliser et optimiser l'organisation de voyages des Taxi-brousse",
     tags: ["Spring Boot", "React js", "MySQL", "Stripe"],
@@ -26,7 +26,7 @@ const projects = [
   },
   {
     title: "Application mobile gestion de présence",
-    image: "/images/project3.png",
+    image: "/images/project3.jpg",
     description:
       "Développement d'une solution numérique centralisée permettant de suivre, d'enregistrer et de piloter la présence des collaborateurs ou des étudiants.",
     tags: ["Spring Boot", "Angular", "Oracle DB", "CI/CD"],
